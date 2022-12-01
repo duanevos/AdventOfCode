@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
-namespace AdventOfCode2022.Utilities;
+namespace AoC.Utilities;
 
 public static class ReflectionUtilities
 {

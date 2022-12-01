@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using AdventOfCode2022.Running;
 using BenchmarkDotNet.Running;
 using System.Reflection;
-using AdventOfCode2022.Utilities;
+using AoC.Utilities;
+using AoC.Running;
 
-namespace AdventOfCode2022;
+namespace AoC;
 
 internal class Program
 {

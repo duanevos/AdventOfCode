@@ -2,7 +2,7 @@
 using BenchmarkDotNet.Order;
 using System.Reflection;
 
-namespace AdventOfCode2022.Running;
+namespace AoC.Running;
 
 [MemoryDiagnoser(false)]
 [Orderer(SummaryOrderPolicy.Method, MethodOrderPolicy.Alphabetical)]
