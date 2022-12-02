@@ -32,11 +32,13 @@ namespace AoC.Challenges
         {
             int sum = 0;
             List<int> calories = new();
-            foreach(string s in Input){
-                if (s == ""){
+            for (int i = 0; i < Input.Length; i++){
+                if (Input[i] == "")
+                {
                     calories.Add(sum);
                     sum = 0;
-                }else sum += int.Parse(s);
+                }
+                else sum = int.Parse(Input[i]);
             }
             return calories;
         }
