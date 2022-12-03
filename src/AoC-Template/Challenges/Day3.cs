@@ -24,10 +24,10 @@ namespace AoC.Challenges
         {
             string right;
             int sum = 0;
-            foreach(string s in Input)
+            foreach (string s in Input)
             {
                 right = s[(s.Length / 2)..];
-                for(int i = 0; i < s.Length / 2; i++)
+                for (int i = 0; i < s.Length / 2; i++)
                 {
                     if (right.Contains(s[i]))
                     {
@@ -38,11 +38,25 @@ namespace AoC.Challenges
             }
             return sum.ToString();
         }
-        
+
         public override string SolvePartTwo()
         {
-            return "";            
+            int sum = 0;
+            for (int i = 0; i < Input.Length - 2; i+=3)
+            {
+                for (int j = 0; j < Input[i].Length; j++)
+                {
+                    char c = Input[i][j];
+                    if (Input[i + 1].Contains(c) && Input[i + 2].Contains(c))
+                    {
+                        sum += Input[i][j] - (Input[i][j] >= 'a' ? 'a' - 1 : 'A' - 27);
+                        break;
+                    }
+                }
+            }
+            return sum.ToString();
         }
     }
 }
+
 
